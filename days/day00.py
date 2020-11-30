@@ -1,5 +1,6 @@
 """
 Solution for day {day}/12/2020
+Created at {date}
 """
 
 import sys
