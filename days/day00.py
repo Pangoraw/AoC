@@ -16,7 +16,7 @@ def solution1(inp):
 
 
 def solution2(inp):
-    """Solves the first part of the challenge"""
+    """Solves the second part of the challenge"""
 
 
 if __name__ == "__main__":
