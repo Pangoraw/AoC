@@ -8,8 +8,6 @@ sys.path.append("../aoc")
 
 from aoc import challenge_runner
 
-CURRENT_DAY = {day}
-
 
 def solution1(inp):
     """Solves the first part of the challenge"""
@@ -20,4 +18,5 @@ def solution2(inp):
 
 
 if __name__ == "__main__":
+    CURRENT_DAY = {trimmed_day}
     challenge_runner.run_for_day(CURRENT_DAY, solution1, solution2)
