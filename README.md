@@ -1,6 +1,6 @@
-# AoC
+# Advent of Code :santa:
 
-Repository for the Advent of Code 2020 in Python :snake:.
+Repository for the Advent of Code 2020 in Python :snake:
 
 ## Usage
 
@@ -10,4 +10,10 @@ Every day, run the following command to bootstrap the file and download the corr
 
 ```
 ./new_day.sh
+```
+
+When the solution for the first part has been submitted you can run only part two by running:
+
+```
+./new_day.sh -D
 ```
