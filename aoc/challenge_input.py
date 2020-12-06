@@ -16,10 +16,15 @@ SESSION_KEY_FILENAME = "session_key.txt"
 def get_input_for_day(day):
     """
     Downloads the input for the current day
-    Skips if the input already exists
+    Skips if the input already exists to prevent
+    server spam. The inputs for the previous days
+    can be seen in the `inputs/` folder.
     Parameters
     ==========
         day: Int - the current day of the month
+    Returns
+    =======
+        input: String - the input for the current day
     """
 
     file_path = os.path.join(CACHE_FOLDER, f"{day}.txt")
