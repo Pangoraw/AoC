@@ -7,7 +7,7 @@ import sys
 sys.path.append("../aoc")
 
 from aoc import challenge_runner
-from aoc.parser import get_lines, map_input
+from aoc.parser import get_lines
 
 
 def solution1(inp):
