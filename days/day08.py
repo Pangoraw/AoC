@@ -20,7 +20,7 @@ class Prg:
     def step(self):
         if self.pc in self.visited:
             return self.reg
-        self.visited = self.visited.union(set([self.pc]))
+        self.visited.add(self.pc)
 
         instr = self.instrs[self.pc]
         inst, v = instr.split(" ")
@@ -62,6 +62,11 @@ def solution2(inp):
         if "jmp" in inst or "nop" in inst)
     cid = 0
     while not done:
+        if "jmp" in inp[cur_idx]:
+            inp[cur_idx] = inp[cur_idx].replace("jmp", "nop")
+        elif "nop" in inp[cur_idx]:
+            inp[cur_idx] = inp[cur_idx].replace("nop", "jmp")
+
         prg = Prg(inp)
         acc, done = prg.run()
 
@@ -70,12 +75,9 @@ def solution2(inp):
         elif "nop" in inp[cur_idx]:
             inp[cur_idx] = inp[cur_idx].replace("nop", "jmp")
 
-        cid += 1
-        if cid == 2:
-            cid = 0
-            cur_idx = next(
-                i + cur_idx + 1 for i, inst in enumerate(inp[cur_idx+1:])
-                if "jmp" in inst or "nop" in inst)
+        cur_idx = next(
+            i + cur_idx + 1 for i, inst in enumerate(inp[cur_idx+1:])
+            if "jmp" in inst or "nop" in inst)
 
     return acc
 
