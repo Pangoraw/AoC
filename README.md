@@ -40,7 +40,12 @@ if x in range(w): # range implements __contains__
 
 ### Day 12
 
-Raise an exception at the end of a `if/elif` chain to unmatched inputs to slip through (I wrote `O` instead of `W` initially).
+Raise an exception at the end of a `if/elif` chain to unmatched inputs to slip through (I wrote `O` instead of `W` initially). There is also native support for complex numbers in Python (`1j ** 2 = (-1 + 0j)`) !
+
+
+### Day 13
+
+[Chinese Remainder Theorem (CRT)](https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
 
 ## Usage
 
