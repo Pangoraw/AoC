@@ -47,6 +47,16 @@ Raise an exception at the end of a `if/elif` chain to unmatched inputs to slip t
 
 [Chinese Remainder Theorem (CRT)](https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
 
+### Day 14
+
+The `bin()` and `hex()` functions to represent numbers differently. Also, `str.translate()` and `str.maketrans()`.
+
+```python
+trans = str.maketrans("X01", "ABC")
+"XX11000".translate(trans)
+# 'AACCBBB'
+```
+
 ## Usage
 
 The repository handles the download of input files automatically and caches them in the `inputs` folder to prevent server spam. The file [`day00.py`](https://github.com/Pangoraw/AoC/blob/main/days/day00.py) is used as a template for everyday. The `aoc` folder contains functions useful in common situations.
