@@ -57,6 +57,14 @@ trans = str.maketrans("X01", "ABC")
 # 'AACCBBB'
 ```
 
+### Day 16
+
+Don't iterate on an array while removing elements from it!
+
+## Day 17
+
+`itertools.product(it, repeat=N)` can be used to iterate over N-dimensional coordinates systems.
+
 ## Usage
 
 The repository handles the download of input files automatically and caches them in the `inputs` folder to prevent server spam. The file [`day00.py`](https://github.com/Pangoraw/AoC/blob/main/days/day00.py) is used as a template for everyday. The `aoc` folder contains functions useful in common situations.
